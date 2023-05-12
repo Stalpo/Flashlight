@@ -18,7 +18,7 @@ player.src = "bluePlayer.png";
 // create world
 
 let blocks = [];
-blocks.push([[500, 500], [500, 600], [600, 600], [600, 500]]);
+blocks.push([[500, 500], [500, 700], [700, 700], [700, 500]]);
 
 // inputs
 
@@ -135,7 +135,23 @@ function WalkIntoBlock(block) {
 }
 
 function WalkIntoLine(p1, p2) {
+    let pdist = Math.sqrt((x - p1[0]) * (x - p1[0]) + (y - p1[1]) * (y - p1[1]));
+    if (pdist <= canvas.height / 17 / 2) {
+        let xr = Math.abs(x - p1[0]) / pdist;
+        let yr = Math.abs(y - p1[1]) / pdist;
+        if (x > p1[0]) {
+            x += xr * (canvas.height / 17 / 2 - pdist);
+        } else {
+            x -= xr * (canvas.height / 17 / 2 - pdist);
+        }
+        if (y > p1[1]) {
+            y += yr * (canvas.height / 17 / 2 - pdist);
+        } else {
+            y -= yr * (canvas.height / 17 / 2 - pdist);
+        }
+    } else if ( false ) {
 
+    }
 }
 
 //render
