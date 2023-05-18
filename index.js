@@ -16,9 +16,45 @@ let player = new Image();
 player.src = "bluePlayer.png";
 
 // create world
+// , [00, 00]
+// blocks.push([[00, 00]]);
 
 let blocks = [];
-blocks.push([[500, 500], [500, 700], [700, 700], [700, 500]]);
+blocks.push([[200, 2000], [3300, 2000], [3300, 2100], [200, 2100]]);
+blocks.push([[-200, 2000], [-3300, 2000], [-3300, 2100], [-200, 2100]]);
+blocks.push([[3200, 2000], [3300, 2000], [3300, -2000], [3200, -2000]]);
+blocks.push([[-3200, 2000], [-3300, 2000], [-3300, -2000], [-3200, -2000]]);
+blocks.push([[-3300, -2100], [3300, -2100], [3300, -2000], [-3300, -2000]]);
+blocks.push([[100, 100], [200, 100], [200, 2100], [-200, 2100], [-200, 200], [-300, 200], [-300, 100], [-100, 100], [-100, 2000], [100, 2000]]);
+blocks.push([[200, 100], [500, 100], [500, 400], [300, 400], [300, 300], [400, 300], [400, 200], [200, 200]]);
+blocks.push([[100, -300], [200, -300], [200, -200], [300, -200], [300, -300], [400, -300], [400, -200], [500, -200], [500, -300], [600, -300], [600, -200], [700, -200], [700, -300], [800, -300], [800, -100], [100, -100]]);
+blocks.push([[900, -300], [1000, -300], [1000, -200], [1100, -200], [1100, -300], [1200, -300], [1200, -200], [1300, -200], [1300, -300], [1400, -300], [1400, -200], [1500, -200], [1500, -300], [1600, -300], [1600, -100], [900, -100]]);
+blocks.push([[100, -600], [100, -400], [200, -400], [200, -500], [300, -500], [300, -400], [400, -400], [400, -500], [500, -500], [500, -400], [600, -400], [600, -500], [700, -500], [700, -400], [800, -400], [800, -500], [900, -500], [900, -400], [1000, -400], [1000, -500], [1100, -500], [1100, -400], [1200, -400], [1200, -500], [1300, -500], [1300, -400], [1400, -400], [1400, -500], [1500, -500], [1500, -400], [1600, -400], [1600, -600]]);
+blocks.push([[700, 100], [800, 100], [800, 600], [700, 600]]);
+blocks.push([[200, 500], [500, 500], [500, 600], [200, 600]]);
+blocks.push([[900, 100], [1600, 100], [1600, 200], [1000, 200], [1000, 500], [1600, 500], [1600, 600], [900, 600]]);
+blocks.push([[1800, 100], [1900, 100], [1900, 900], [300, 900], [300, 800], [1800, 800]]);
+blocks.push([[200, 1100], [1900, 1100], [1900, 1200], [200, 1200]]);
+blocks.push([[2100, -100], [2200, -100], [2200, 1100], [2100, 1100]]);
+blocks.push([[1600, -200], [1900, -200], [1900, -900], [500, -900], [500, -1000], [2000, -1000], [2000, -100], [1600, -100]]);
+blocks.push([[2000, -200], [3200, -200], [3200, -100], [2000, -100]]);
+blocks.push([[100, -1400], [2400, -1400], [2400, -500], [2300, -500], [2300, -1300], [200, -1300], [200, -600], [100, -600]]);
+blocks.push([[100, -2000], [200, -2000], [200, -1400], [100, -1400]]);
+blocks.push([[400, -1700], [2700, -1700], [2700, -200], [2600, -200], [2600, -1600], [400, -1600]]);
+blocks.push([[2900, -2000], [3000, -2000], [3000, -400], [2900, -400]]);
+blocks.push([[400, 1400], [600, 1400], [600, 1600], [400, 1600]]);
+blocks.push([[900, 1700], [1000, 1700], [1000, 1600], [1100, 1600], [1100, 1700], [1200, 1700], [1200, 1800], [1100, 1800], [1100, 1900], [1000, 1900], [1000, 1800], [900, 1800]]);
+blocks.push([[1400, 1300], [1700, 1300], [1700, 1600], [1400, 1600]]);
+blocks.push([[1600, 1800], [2200, 1800], [2200, 1900], [1600, 1900]]);
+blocks.push([[2100, 1400], [2200, 1400], [2200, 1300], [2300, 1300], [2300, 1200], [2400, 1200], [2400, 1300], [2500, 1300], [2500, 1400], [2600, 1400], [2600, 1500], [2500, 1500], [2500, 1600], [2400, 1600], [2400, 1700], [2300, 1700], [2300, 1600], [2200, 1600], [2200, 1500], [2100, 1500]]);
+blocks.push([[2600, 1700], [2900, 1700], [2900, 1400], [3000, 1400], [3000, 1800], [2600, 1800]]);
+blocks.push([[2700, 1000], [2800, 1000], [2800, 1100], [2900, 1100], [2900, 1000], [3000, 1000], [3000, 1200], [2700, 1200]]);
+blocks.push([[2200, 800], [3000, 800], [3000, 900], [2200, 900]]);
+blocks.push([[2300, 200], [2400, 200], [2400, 300], [2300, 300]]);
+blocks.push([[2600, 100], [2800, 100], [2800, 300], [2600, 300]]);
+blocks.push([[3000, 100], [3100, 100], [3100, 500], [3000, 500]]);
+blocks.push([[2400, 500], [3200, 500], [3200, 600], [2400, 600]]);
+
 
 // inputs
 
@@ -149,8 +185,29 @@ function WalkIntoLine(p1, p2) {
         } else {
             y -= yr * (canvas.height / 17 / 2 - pdist);
         }
-    } else if ( false ) {
-
+    }
+    if (p1[0] - p2[0] == 0) {
+        if (y > p1[1] && y < p2[1] || y < p1[1] && y > p2[1]) {
+            if (Math.abs(x - p1[0]) <= canvas.height / 17 / 2) {
+                if (x - p1[0] > 0) {
+                    x += (canvas.height / 17 / 2 - Math.abs(x - p1[0]))
+                } else {
+                    x -= (canvas.height / 17 / 2 - Math.abs(x - p1[0]))
+                }
+            }
+        }
+    } else if (p1[1] - p2[1] == 0) {
+        if (x > p1[0] && x < p2[0] || x < p1[0] && x > p2[0]) {
+            if (Math.abs(y - p1[1]) <= canvas.height / 17 / 2) {
+                if (y - p1[1] > 0) {
+                    y += (canvas.height / 17 / 2 - Math.abs(y - p1[1]))
+                } else {
+                    y -= (canvas.height / 17 / 2 - Math.abs(y - p1[1]))
+                }
+            }
+        }
+    } else {
+        let slope = p1[x] - p2[x];
     }
 }
 
@@ -167,8 +224,8 @@ window.addEventListener('resize', () => {
 
 function render() {
     renderBG();
+    blockVision();
     renderMe();
-    blocks.forEach(b => { renderBlock(b); });
 
     animationFrameRequestId = requestAnimationFrame(render);
 }
@@ -204,40 +261,58 @@ function renderMe() {
     context.restore();
 }
 
-function renderBlock(block) {
+// render out stuff you cant see
+
+function blockVision() {
+    context.save();
+    context.translate(canvas.width / 2, canvas.height / 2);
+    context.rotate(60 * Math.PI / 180 + dir);
+    context.fillRect(-2000, 0, 4000, 2000);
+    context.restore();
+
+    context.save();
+    context.translate(canvas.width / 2, canvas.height / 2);
+    context.rotate(-60 * Math.PI / 180 + dir);
+    context.fillRect(-2000, 0, 4000, 2000);
+    context.restore();
+
+    blocks.forEach(b => { blockBlock(b); });
+}
+
+function blockBlock(block) {
     let first;
     let last;
     block.forEach(p => {
         if (first == null) {
             first = p;
         } else {
-            const canvasX = canvas.width / 2 + fixCoord(p[0]) - fixCoord(x);
-            const canvasY = canvas.height / 2 + fixCoord(p[1]) - fixCoord(y);
-            const canvasX2 = canvas.width / 2 + fixCoord(last[0]) - fixCoord(x);
-            const canvasY2 = canvas.height / 2 + fixCoord(last[1]) - fixCoord(y);
-            context.save();
-            context.lineWidth = 10;
-            context.strokeStyle = '#8F8F8F';
-            context.beginPath();
-            context.moveTo(canvasX, canvasY);
-            context.lineTo(canvasX2, canvasY2);
-            context.stroke();
-            context.restore();
+            blockLine(p, last);
         }
         last = p;
     });
-    const canvasX = canvas.width / 2 + fixCoord(first[0]) - fixCoord(x);
-    const canvasY = canvas.height / 2 + fixCoord(first[1]) - fixCoord(y);
-    const canvasX2 = canvas.width / 2 + fixCoord(last[0]) - fixCoord(x);
-    const canvasY2 = canvas.height / 2 + fixCoord(last[1]) - fixCoord(y);
+    blockLine(first, last);
+}
+
+function blockLine(p1, p2) {
     context.save();
-    context.lineWidth = 10;
-    context.strokeStyle = '#8F8F8F';
+    context.translate(canvas.width / 2, canvas.height / 2);
     context.beginPath();
-    context.moveTo(canvasX, canvasY);
-    context.lineTo(canvasX2, canvasY2);
-    context.stroke();
+    context.moveTo(fixCoord(p1[0]) - fixCoord(x), fixCoord(p1[1]) - fixCoord(y));
+    context.lineTo(fixCoord(p2[0]) - fixCoord(x), fixCoord(p2[1]) - fixCoord(y));
+    context.lineTo((fixCoord(p2[0]) - fixCoord(x)) * 20, (fixCoord(p2[1]) - fixCoord(y)) * 20);
+    context.lineTo((fixCoord(p1[0]) - fixCoord(x)) * 20, (fixCoord(p1[1]) - fixCoord(y)) * 20);
+    context.fill();
     context.restore();
+}
+
+// helper functions
+
+function getSlope(p1, p2) {
+    if (p1[1] - p2[1] == 0) {
+        return null;
+    } else {
+        return (p1[1] - p2[1]) / (p1[0] - p2[0]);
+    }
 }
 
 function fixCoord(x) {
